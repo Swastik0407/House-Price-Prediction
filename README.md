@@ -1,31 +1,24 @@
-# 🏠 House Price Prediction
+# 🏠 House Price Prediction using Random Forest Regressor
 
-A Machine Learning project that predicts house prices based on various property features using Python and Scikit-learn.
+A Machine Learning project that predicts house prices based on various property features using the **Random Forest Regressor** algorithm from Scikit-learn.
+
+---
 
 ## 📌 Project Overview
 
-This project demonstrates the complete Machine Learning workflow, including:
-
-- Data loading
-- Data preprocessing
-- Exploratory Data Analysis (EDA)
-- Feature selection
-- Model training
-- Model evaluation
-- House price prediction
-
-The objective is to build a regression model capable of estimating the selling price of a house based on its characteristics.
+The goal of this project is to develop a machine learning model capable of accurately predicting house prices based on different property characteristics. The project covers the complete ML workflow, from data preprocessing to model evaluation and prediction.
 
 ---
 
 ## 🚀 Features
 
-- Data preprocessing and cleaning
+- Data Cleaning & Preprocessing
 - Exploratory Data Analysis (EDA)
-- Feature Engineering
-- Model Training using Scikit-learn
+- Feature Encoding
+- Train-Test Split
+- Model Training using Random Forest Regressor
 - Model Evaluation
-- Prediction on unseen data
+- House Price Prediction
 
 ---
 
@@ -34,25 +27,36 @@ The objective is to build a regression model capable of estimating the selling p
 ```
 House-Price-Prediction/
 ├── HousePrice_Prediction.ipynb
-├── housing.csv
-├── model.pkl
+├── main.py
 ├── requirements.txt
 └── README.md
+```
 
----
-
+> *(Add your dataset file here if it is included in the repository.)*
 ## 🛠️ Tech Stack
 
 - Python
 - Google Colab
 - NumPy
 - Pandas
-- Matplotlib
 - Scikit-learn
 
 ---
 
-## 📊 Machine Learning Workflow
+## 🤖 Machine Learning Model
+
+The project uses the **Random Forest Regressor**, an ensemble learning algorithm that combines multiple decision trees to improve prediction accuracy and reduce overfitting.
+
+### Why Random Forest?
+
+- Handles non-linear relationships effectively
+- Reduces overfitting compared to a single decision tree
+- High prediction accuracy
+- Works well with both numerical and categorical features
+
+---
+
+## 🔄 Machine Learning Workflow
 
 ```text
 Dataset
@@ -64,52 +68,73 @@ Data Cleaning
 Exploratory Data Analysis
    │
    ▼
-Feature Selection
+Feature Engineering
+   │
+   ▼
+Encoding Categorical Features
    │
    ▼
 Train-Test Split
    │
    ▼
-Model Training
+Random Forest Regressor
    │
    ▼
 Model Evaluation
    │
    ▼
-Price Prediction
+House Price Prediction
 ```
 
 ---
 
-## 📈 Algorithms
+## 📊 Dataset Features
 
-The project uses regression algorithms from Scikit-learn.
+The model predicts house prices using features such as:
 
-Examples include:
+- Area
+- Bedrooms
+- Bathrooms
+- Stories
+- Parking
+- Main Road Access
+- Guest Room
+- Basement
+- Hot Water Heating
+- Air Conditioning
+- Preferred Area
+- Furnishing Status
 
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
+**Target Variable**
 
-*(Update this section according to the algorithm you actually used.)*
+- Price
+
+---
+
+## 📈 Model Evaluation
+
+The model performance can be evaluated using regression metrics such as:
+
+- R² Score
+- Mean Absolute Error (MAE)
 
 ---
 
 ## 📦 Installation
 
-Clone the repository:
+Clone the repository
 
 ```bash
-git clone https://github.com/YourUsername/House-Price-Prediction.git
+git clone https://github.com/Swastik0407/House-Price-Prediction.git
 ```
 
-Move into the project directory:
+Navigate to the project directory
 
 ```bash
 cd House-Price-Prediction
 ```
 
-Install the required packages:
+Install the required dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -119,61 +144,35 @@ pip install -r requirements.txt
 
 ## ▶️ Running the Project
 
-Open the notebook using:
+Open the notebook in **Google Colab** or **Jupyter Notebook**.
 
-- Google Colab
-- Jupyter Notebook
-
-Run all cells sequentially to:
+Run all the cells sequentially to:
 
 - Load the dataset
-- Train the model
-- Evaluate performance
-- Predict house prices
+- Preprocess the data
+- Train the Random Forest model
+- Evaluate the model
+- Make house price predictions
 
 ---
 
-## 📋 Dataset
+## 📚 Libraries Used
 
-The dataset contains various housing-related features such as:
-
-- Area
-- Number of Bedrooms
-- Number of Bathrooms
-- Floors
-- Parking
-- Furnishing Status
-- Air Conditioning
-- Main Road Access
-- Guest Room
-- Basement
-- Hot Water Heating
-- Preferred Area
-
-Target Variable:
-
-- House Price
-
----
-
-## 📊 Libraries Used
-
-- pandas
-- numpy
-- matplotlib
-- scikit-learn
-- jupyter
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
 
 ---
 
 ## 🔮 Future Improvements
 
-- Hyperparameter tuning
-- Feature engineering
+- Hyperparameter tuning using GridSearchCV
+- Cross-validation
+- Feature importance visualisation
 - Model deployment using FastAPI
-- Interactive web interface
-- Docker containerization
-- Cloud deployment
+- Web interface using Streamlit
+- Docker deployment
 
 ---
 
@@ -181,14 +180,17 @@ Target Variable:
 
 **Swastik Saha**
 
-Computer Science Engineering Student
+B.Tech Computer Science Engineering Student
 
-Interested in:
+**Interests**
+
 - Machine Learning
 - Artificial Intelligence
-- FastAPI
 - Data Science
+- FastAPI
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a star!
+## ⭐ Support
+
+If you found this project helpful, consider giving the repository a ⭐ on GitHub.
